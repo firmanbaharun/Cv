@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DATA PRIBADI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #c0c0c0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    section {
+      background-color: rgba(211, 204, 204, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(223, 220, 220, 0.1);
+      margin-top: flex;
+      text-align: center;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+  }
+  
+
+    h1 {
+      text-align: center;
+      color: #020202;
+      border-bottom: 2px solid #0e0d0d;
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+        text-align: center;
+        color: #000000;
+    }
+
+    p {
+      margin-bottom: 10px;
+      text-align: center;
+      color: #0e0d0d;
+      
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+    .navigation-buttons {
+      margin-top: auto;
+      display: 20px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .back-button,
+    .next-button {
+      background-color: #656a72;
+      color: #ececec;
+      padding: 10px 10px;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .back-button:hover,
+    .next-button:hover {
+      background-color: #3b4864;
+    }
+    
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+  
+    .video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="video">
+            <source src="https://video.wixstatic.com/video/c0bbc5_ea3fdc8d953b4dbcab20a021d2ef1389/1080p/mp4/file.mp4"
+             type="video/mp4">
+            <!-- Replace "your-video-source.mp4" with the actual source of your video -->
+        </video>
+    </div>    
+
+  <section>
+
+
+    <h1>DATA PRIBADI</h1>
+    <p>Nama :FIRMAN N.E.BAHARUN</p>
+    <p>TTL :Tuwa,01-juni-2003</p>
+    <p>Alamat :Kec.Pacar Kab.Manggarai Barat prov.NTT</p>
+    <p>Jenis Kelamin : Laki-Laki</p>
+    <p>Agama : Katholik</p>
+    <p>Status : Belum kawin</p>
+    
+    <h2>Informasi Kontak</h2>
+    <ul>
+      <li>Email: baharunelroy@gmail.com</li>
+      <li>Telepon: (+62) 8123-8774-896</li>
+      <li>Alamat Sekarang: Jl. Lontar2 No. 123, Kota Kupang</li>
+    </ul>
+
+    <h2>Hobi</h2>
+    <ul>
+      <li>Traveling</li>
+      <li>Membaca</li>
+      <li>Menulis</li>
+    </ul>
+    <div class="navigation-buttons">
+      <div class="navigation-buttons">
+        <div class="navigation-buttons">
+          <a href="index.html" class="back-button"><span class="arrow">&#8592;</span> Kembali</a>
+      <a href="pendidikan.html" class="next-button">Selanjutnya <span class="arrow">&#8594;</span></a>
+                
+    </div>
+  </section>
+
+</body>
+</html>

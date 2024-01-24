@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PENDIDIKAN</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #c0c0c0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    section {
+      background-color: rgba(211, 204, 204, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(223, 220, 220, 0.1);
+      margin-top: flex;
+      text-align: center;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0d0e0d;
+      border-bottom: 2px solid #030303;
+      padding-bottom: 10px;
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #0b0c0b;
+    }
+
+    p {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    .navigation-buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center; /* Center the navigation buttons */
+      align-items: center;
+    }
+
+    .back-button,
+    .next-button {
+      background-color: #4f5d75;
+      color: #cecbcb;
+      padding: 10px 10px;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+      font-size: 12px;
+      cursor: pointer;
+      margin: 0 10px; /* Add margin for better spacing */
+      
+    }
+    .video-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+  }
+
+  .video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <video autoplay muted loop class="video">
+        <source src="https://video.wixstatic.com/video/c0bbc5_ea3fdc8d953b4dbcab20a021d2ef1389/1080p/mp4/file.mp4"
+         type="video/mp4">
+        <!-- Replace "your-video-source.mp4" with the actual source of your video -->
+    </video>
+</div>
+
+
+  <section>
+    <h1>PENDIDIKAN</h1>
+
+    <h2>Pendidikan Formal</h2>
+
+    <h3>Pendidikan Dasar</h3>
+    <p>SDK Tuwa</p>
+
+    <h3>Pendidikan Menengah</h3>
+    <p>SMP Negeri 6 Pacar</p>
+    <p>SMKS Stella Maris Labuan Bajo</p>
+
+    <h3>Perguruan Tinggi</h3>
+    <p>Prodi Teknik Informasi, Universitas Citra Bangsa</p>
+
+    <h2>Pendidikan Non-Formal</h2>
+    <p>Penerapan Teknologi dalam Tilang Elektronik</p>
+
+    <div class="navigation-buttons">
+      <a href="datapribadi.html" class="back-button"><span class="arrow">&#8592;</span> Kembali</a>
+      <a href="skills.html" class="next-button" onclick="openBook()">Selanjutnya <span class="arrow">&#8594;</span></a>
+    </div>
+  </section>
+
+  <script>
+    function openBook() {
+      document.querySelector('section').classList.add('open-book');
+    }
+  </script>
+
+</body>
+</html>
